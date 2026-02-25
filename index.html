@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidharth S | Textile Technology Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #FAFBFC;
+      --surface-color: #FFFFFF;
+      --text-color: #1A1D23;
+      --primary-color: #2563eb;
+      --secondary-color: #64748B;
+    }
+    body { font-family: 'Outfit', sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; }
+    .font-heading { font-family: 'Space Grotesk', sans-serif; }
+    .textile-pattern {
+      background-image: linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px), linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .weave-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary-color) 0%, #7C3AED 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+ </head>
+ <body class="h-full">
+  <div class="w-full h-full overflow-auto">
+   
+   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/90 border-b border-blue-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+     <a href="#" class="font-heading font-bold text-xl text-blue-600 flex items-center gap-2">
+      <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="8" stroke="currentColor" stroke-width="2"/><path d="M12 14h16M12 20h16M12 26h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span id="nav-name">Sidharth</span>
+     </a>
+     <div class="hidden md:flex items-center gap-8 text-slate-600 font-medium text-sm">
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#skills" class="hover:text-blue-600">Skills</a>
+      <a href="#Internship" class="hover:text-blue-600">Internship</a>
+      <a href="#contact" class="px-5 py-2.5 rounded-full text-white bg-gradient-to-r from-blue-600 to-violet-600 hover:shadow-lg transition-all">Contact</a>
+     </div>
+    </div>
+   </nav>
+
+   <section id="hero" class="min-h-screen flex items-center textile-pattern pt-20">
+    
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+     <div class="fade-in">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 mb-6">
+       <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+       <span class="text-sm font-medium text-blue-600">KCT Textile Tech Student</span>
+      </div>
+      <h1 id="hero-name" class="font-heading text-5xl lg:text-6xl font-bold mb-4">Sidharth <span class="gradient-text">S</span></h1>
+      <p id="hero-tagline" class="text-xl font-medium text-slate-500 mb-6">B.Tech Textile Technology Student</p>
+      <p id="hero-summary" class="text-lg text-slate-600 mb-8 max-w-xl">Textile Technology student with a passion for technology and innovation. A motivated student from Kumaraguru college of Technology aspiring to gain industrial exposure in garment Industrial Engineering through work study ,SMV(Standard Minutes Value) analysis and Productive improvement.</p>
+      <div class="flex gap-4">
+       <a href="#Internship" class="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold hover:scale-105 transition-transform">View Internship</a>
+       <a href="resume.pdf"
+          target="_blank"
+          class="px-8 py-3 rounded-full bg-white text-blue-600 font-semibold border-2 border-blue-600 hover:bg-blue-50 transition">
+          View Resume
+       </a>
+      </div>
+     </div>
+     <div class="hidden lg:flex justify-center">
+        <img
+            src="images/photo.png"
+            alt="My Photo"
+            class="w-64 h-55 rounded-full object-cover border-4 border-blue-600 shadow-lg">
+    </div>
+
+    </div>
+   </section>
+
+   <section id="about" class="py-24 weave-pattern bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+     <h2 class="font-heading text-4xl font-bold mb-8">About <span class="gradient-text">Me</span></h2>
+     <p id="about-text" class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+      I am a self-motivated and responsible individual with strong learning ability and teamwork skills. I am looking for an opportunity to apply my knowledge, develop professionally, and contribute effectively to the organization.
+     </p>
+    </div>
+   </section> 
+   <section id="skills" class="py-24 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="font-heading text-4xl font-bold mb-12 text-center">
+      Technical <span class="gradient-text">Skills</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100">
+        <h3 class="font-heading text-2xl font-bold mb-4">Spinning Technology</h3>
+        <p class="text-slate-600">
+          Knowledge in blow room, carding, draw frame, roving and ring spinning processes.
+        </p>
+      </div>
+
+      <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100">
+        <h3 class="font-heading text-2xl font-bold mb-4">Garment Industrial Engineering</h3>
+        <p class="text-slate-600">
+          Exposure to work study, SMV calculation, line balancing and productivity improvement.
+        </p>
+      </div>
+
+      <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100">
+        <h3 class="font-heading text-2xl font-bold mb-4">Quality & Testing</h3>
+        <p class="text-slate-600">
+          Familiar with textile testing methods and quality assurance basics.
+        </p>
+      </div>
+
+      <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100">
+        <h3 class="font-heading text-2xl font-bold mb-4">Software & Tools</h3>
+        <p class="text-slate-600">
+          MS Word, MS Excel and basic HTML & CSS.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+   <section id="Internship" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6">
+     <h2 class="font-heading text-4xl font-bold mb-12 text-center">Featured <span class="gradient-text">Internship</span></h2>
+     <div class="grid md:grid-cols-2 gap-8">
+      <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100">
+       <h3 class="font-heading text-2xl font-bold mb-4">Santhosh Spinning Mills</h3>
+       <p class="text-slate-600 mb-6">During the period of intership program, I had been exposed to different
+Processes and was found diligent, hard working and inquisitive approach to learning</p>
+       <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-md">Spinning</span>
+       </div>
+      </div>
+      <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100">
+       <h3 class="font-heading text-2xl font-bold mb-4">TUV Rheinland (Bangalore)</h3>
+       <p class="text-slate-600 mb-6">During my tenure, I diligently carried out my assigned duties and responsibilities and successfully fulfilled all organizational requirements without any pending liabilities</p>
+       <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-green-50 text-green-600 text-xs rounded-md">Quality Assurance</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <section id="contact" class="py-24 textile-pattern bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+     <h2 class="font-heading text-4xl font-bold mb-4">Let's <span class="gradient-text">Connect</span></h2>
+     <p class="text-slate-600 mb-12"></p>
+     <div class="grid md:grid-cols-3 gap-6">
+      <a href="mailto:sidharthmano2006@gmail.com" class="p-6 bg-slate-50 rounded-2xl hover:bg-blue-50 transition-colors">
+       <p class="font-bold">Email</p>
+       <p id="contact-email" class="text-sm text-blue-600">sidharthmano2006@gmail.com</p>
+      </a>
+      <a href="https://linkedin.com/in/sidharth0502" class="p-6 bg-slate-50 rounded-2xl hover:bg-blue-50 transition-colors">
+       <p class="font-bold">LinkedIn</p>
+       <p id="contact-linkedin" class="text-sm text-blue-600">www.linkedin.com/in/sidharth0502</p>
+      </a>
+      <div class="p-6 bg-slate-50 rounded-2xl">
+       <p class="font-bold">Location</p>
+       <p class="text-sm text-slate-500">Coimbatore, India</p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <footer class="py-8 bg-slate-900 text-white/60 text-center text-sm">
+    © 2026 Sidharth S | Kumaraguru College of Technology
+   </footer>
+  </div>
+
+  <script>
+    // Configuration for SDK
+    const defaultConfig = {
+      student_name: "Sidharth S",
+      tagline: "B.Tech Textile Technology Student",
+      hero_summary: "Textile Technology student with a passion for technology and innovation. A motivated student from Kumaraguru college of Technology aspiring to gain industrial exposure in garment Industrial Engineering through work study ,SMV(Standard Minutes Value) analysis and Productive improvement.",
+      about_text: "I am a self-motivated and responsible individual with strong learning ability and teamwork skills. I am looking for an opportunity to apply my knowledge, develop professionally, and contribute effectively to the organization.",
+      email: "sidharthmano2006@gmail.com",
+      linkedin: "linkedin.com/in/sidharth0502",
+      location: "Coimbatore, Tamil Nadu",
+      background_color: "#FAFBFC",
+      surface_color: "#FFFFFF",
+      text_color: "#1A1D23",
+      primary_color: "#2563EB",
+      secondary_color: "#64748B",
+      font_family: "Outfit",
+      font_size: 16
+    };
+
+    function onConfigChange(config) {
+      // Sync names
+      const name = config.student_name || defaultConfig.student_name;
+      document.getElementById('hero-name').innerHTML = `${name.split(' ')[0]} <span class="gradient-text">${name.split(' ').slice(1).join(' ')}</span>`;
+      document.getElementById('hero-tagline').textContent = config.tagline || defaultConfig.tagline;
+      document.getElementById('hero-summary').textContent = config.hero_summary || defaultConfig.hero_summary;
+      document.getElementById('about-text').textContent = config.about_text || defaultConfig.about_text;
+      
+      // Sync Contact
+      document.getElementById('contact-email').textContent = config.email || defaultConfig.email;
+      document.getElementById('contact-linkedin').textContent = config.linkedin || defaultConfig.linkedin;
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            { get: () => config.primary_color, set: (v) => { config.primary_color = v; onConfigChange(config); } }
+          ],
+          fontEditable: { get: () => config.font_family, set: (v) => { config.font_family = v; } }
+        }),
+        mapToEditPanelValues: (config) => new Map(Object.entries(config))
+      });
+    }
+  </script>
+ </body>
+</html>
